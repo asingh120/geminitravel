@@ -1,0 +1,444 @@
+/* Stylesheet for Gemini Space Travels
+	Author: Amit Singh 
+	Date: 7/15/2019
+	Filename: styles.css */
+
+
+body {
+	background-image: url("images/background2.jfif");
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: 100%;
+	height: 100%;
+}
+
+
+#heading {
+	display: block;
+	font-family: 'Marcellus SC', serif;
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 100px;
+	color: aquamarine;
+	text-shadow: 3px 3px 2px green;
+	border-radius: 110px;
+}
+
+.launch_img {
+	background-image: url("images/launch.jpg");
+	width: 100%;
+	height: 170px;
+	margin-top: 40px;
+	opacity: 0.70;
+}
+
+.pulsate {
+	-webkit-animation: pulsate 3s ease-in-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+
+@-webkit-keyframes pulsate {
+    0% { 
+        text-shadow: 0px 0px 15px white;
+    }
+    22% { 
+        text-shadow: 2px 2px 15px powderblue;
+    }
+    44% {
+    	text-shadow: 0px 0px 15px mediumblue;
+    }
+    66% {
+    	text-shadow: -2px -2px 15px skyblue;
+    }
+    88% {
+    	text-shadow: 0px 0px 15px mediumblue;
+    }
+    100% { 
+        text-shadow: 1px 1px 15px powderblue;
+    }
+}
+
+
+#horizontalNav ul li {
+	font-size: 1.5em;
+	padding-top: 5px;
+	text-align: center;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+#horizontalNav ul>li a:hover {
+	text-decoration: none;
+	color: red;
+	font-size: 1em;
+	transition: ease-in .3s;
+	text-shadow: 2px 2px 1px black;
+}
+
+#page_title {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	width: 100%;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+	color: rgb(150, 150, 150);
+	text-shadow: 1px 1px 1px white;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+div.section {
+	position: relative;
+	margin-top: 30px;
+}
+
+#wave {
+	width: 230px;
+	height: 800px;
+	opacity: 0.5;
+}
+
+#page_content {
+	text-align: justify;
+  	text-justify: inter-word;
+  	font-size: 1.2em;
+  	font-weight: ;
+    font-family: 'Arvo', serif;
+    color: rgb(240, 240, 240);
+    text-shadow: 1px 1px 1px black;
+    padding-right: 30px;
+}
+
+#aside {
+	text-align: center;
+    font-family: 'Ubuntu', sans-serif; 
+    color: rgb(110, 110, 110); 
+    text-shadow: 1px 1px 1px white;
+    font-size: 22px;
+}
+
+#aside_right {
+	overflow: auto;
+	border: 1px solid black;
+	height: 800px;
+}
+
+#fleet_list {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+}
+
+
+#ship {
+	height: 600px;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.amenity {
+	height: 350px;
+	position: center;
+	width: 400px;
+}
+
+#secondary_img {
+	padding-right: 100px;
+}
+
+#colony_img {
+	height: 500px;
+	width: 100%;
+}
+
+#aliens {
+	width: 100%;
+	height: 600px;
+	opacity: 0.9;
+}
+
+.center_div{
+    margin: 0 auto;
+    width: 100%; 
+}
+
+#form {
+	text-align: center;
+}
+
+#countDown {
+	text-align: center;
+	width: 100%;
+	height: 200px;
+}
+
+#launchTimer {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	width: 100%;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+	color: crimson;
+	text-shadow: 1.5px 1.5px 1.3px black;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+#liftOff {
+	font-size: 4em;
+	color: wheat;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px blue;
+	font-family: 'Raleway', sans-serif;
+}
+
+#foot {
+	width: 100%;
+	height: 20px;
+}
+footer {
+	text-align: center;
+	font-weight: bold;
+	color: wheat;
+	text-shadow: 1px 1px 1px black;
+}
+
+.breakpoint {
+	width: 100%;
+}
+
+#breakpoint {
+	display: block;
+	height: 400px;
+	width: 100%;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
+
+.icon:hover {
+	transition: 0.2s ease-in-out;
+	height: 55px;
+	width: 55px;
+}	
+
+
+/* ==================================================================== */
+/* Media queries for screens of various sizes on different device types */
+
+/* Mobile Devices: 0 - 560 pixels */
+
+@media (max-width: 560px) {
+
+	.launch_img {
+		position: relative;
+		width: 65%;
+		height: 400px;
+	}
+
+	.amenity {
+		display: none;
+	}
+
+	#wave {
+		display: none;
+	}
+
+	#aside_right {
+		display: none;
+	}
+
+	#ship {
+		display: block;
+		width: 100%;
+		height: 400px;
+	}
+
+	#liftOff {
+		font-size: 2.5em;
+	}
+
+	#colony_img {
+		display: block;
+		width: 100%;
+		height: 300px;
+	}
+ 	
+ 	#aliens {
+	width: 100%;
+	height: 300px;
+	}
+}
+
+/* Large Screen Mobile Devices and Small Tablets 561px to 765px */
+
+@media only screen and (min-width: 561px) and (max-width: 765px) {
+
+	.launch_img {
+		position: relative;
+		width: 65%;
+		height: 390px;
+	}
+
+	.amenity {
+		display: none;
+	}
+
+	#wave {
+		display: none;
+	}
+
+	#aside_right {
+		display: none;
+	}
+
+	#ship {
+		display: block;
+		width: 100%;
+		height: 400px;
+	}
+
+	#liftOff {
+		font-size: 3em;
+	}
+
+	#colony_img {
+		display: block;
+		width: 100%;
+		height: 300px;
+	}
+
+	#aliens {
+	width: 100%;
+	height: 400px;
+	}
+}
+
+
+/* Small Tablet to Medium Tablet Devices 761px-1000px */
+
+@media only screen and (min-width: 766px) and (max-width: 960px) {
+
+	.launch_img {
+		position: relative;
+		width: 65%;
+		height: 250px;
+	}
+
+	.amenity {
+		display: none;
+	}
+
+	#wave {
+		display: none;
+	}
+
+	#breakpoint {
+		display: none;
+	}
+	
+	#colony_img {
+		display: block;
+		width: 100%;
+		height: 400px;
+	}
+
+	#aliens {
+	width: 100%;
+	height: 500px;
+	}
+} 
+
+/* Mediq query for colony image only */
+
+@media only screen and (min-width: 766px) and (max-width: 995px) {
+
+	#colony_img {
+		display: block;
+		width: 100%;
+		height: 400px;
+	}
+}
+
+
+/* Large Tablet and Desktop Screens to 1200px */
+
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+	.launch_img {
+		position: relative;
+		width: 65%;
+		height: 250px;
+	}
+
+	.amenity {
+		display: none;
+	}
+
+	#wave {
+		display: none;
+	}
+
+	#breakpoint {
+		display: none;
+	}
+}
+
+/* Large Screens */
+
+@media only screen and (min-width: 1201px) {
+
+	#breakpoint {
+		display:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

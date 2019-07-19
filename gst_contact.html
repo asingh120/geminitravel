@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Gemini Space Travel</title>
+
+	<!-- Bootstrap compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Bootstrap compiled JavaScript, JQuery, and PopperJS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Google Fonts go here -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web|Lato|Arvo|Marcellus+SC|Noto+Serif+SC|Playfair+Display|Ubuntu&display=swap" rel="stylesheet"> 
+
+	<!-- Local stylesheet goes here -->
+	<link href="styles.css" rel="stylesheet">
+
+	<!-- Local JavaScript goes here -->
+	<script src="script.js" async></script>
+	<script src="launch.js" async></script>
+
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"><!-- Main Page Heading -->
+						<h1 id="heading" class="pulsate launch_img">Gemini Space Travels</h1>
+					</div>
+				</div>	
+			</div>	
+		</div>			
+		
+		<div class="header">
+			<div class="container">
+				<div class="row">			
+					<div class="col-md-12" id="horizontalNav">
+						<ul class="nav nav-pills"><!-- Horizontal Navigation List -->
+							<li class="col-md-3"><a href="gst_home.html">Home</a></li>
+							<li class="col-md-3"><a href="gst_travel.html">Travel</a></li>
+							<li class="col-md-3"><a href="gst_colony.html">Colony</a></li>
+							<li class="col-md-3"><a href="gst_contact.html">Learn More</a></li>				
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</header>		
+
+	</br>
+
+		<div class="main">
+			<div class="container">
+				<div class="row"> 
+					<div class="col-md-12"><!-- Page Title -->
+						<h2 id="page_title">About Us</h2>				
+					</div>
+				</div>
+
+			</br>	
+
+				<div class="row">
+					<div class="col-md-12"><!-- Contact Page Main Image -->
+						<img src="images/aliens.jfif" alt="alien staff" id="aliens"/>
+					</div>
+				</div>
+
+			</br>
+
+				<div class="row">
+					<div class="col-md-12" id="page_content"><!-- Contact Page Main Text Content -->
+						<p>Sensors indicate human life forms 30 meters below the planet's surface. Stellar flares are increasing in magnitude and frequency. Set course for Rhomboid Dronegar 006, warp seven. There's no evidence of an advanced communication network. Total guidance system failure, with less than 24 hours' reserve power. Shield effectiveness has been reduced 12 percent. We have covered the area in a spherical pattern which a ship without warp drive could cross in the given time.</p>
+
+						<p>Resistance is futile.</p>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+	<div id="countDown"><!-- JavaScript Count Down Timer -->
+		<h2 id="launchTimer">Next Launch In:</h2>
+			<p id="liftOff"></p>
+	</div>
+
+	<div class="container">
+		<div class="row"> 
+			<div class="col-md-12"><!-- Secondary Page Title -->
+				<h2 id="page_title">Request More Info</h2>				
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container center_div"><!-- Beginning of Contact Form -->
+		<div class="row"> 
+			<div class="col-md-12" id="form">
+				<form class="needs-validation" novalidate>
+				  <div class="form-row">
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustom01">First name</label>
+				      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+				      <div class="valid-feedback">
+				        Looks good!
+				      </div>
+				    </div>
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustom02">Last name</label>
+				      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+				      <div class="valid-feedback">
+				        Looks good!
+				      </div>
+				    </div>
+				    <div class="col-md-4 mb-3">
+				      <label for="validationEMail">E-Mail</label>
+				      <div class="input-group">
+				        <div class="input-group-prepend">
+				          <span class="input-group-text" id="inputGroupPrepend">e-mail</span>
+				        </div>
+				        <input type="email" class="form-control" id="validationEmail" placeholder="example@example.com" aria-describedby="inputGroupPrepend" required>
+				        <div class="invalid-feedback">
+				          Please enter your email address.
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-row">
+				    <div class="col-md-6 mb-3">
+				      <label for="validationCustom03">City</label>
+				      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid city.
+				      </div>
+				    </div>
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom04">State</label>
+				      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid state.
+				      </div>
+				    </div>
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom05">Phone Number</label>
+				      <input type="number" class="form-control" id="validationCustom05" placeholder="Phone Number" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid phone number.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="form-check">
+				      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+				      <label class="form-check-label" for="invalidCheck">
+				        Agree to terms and conditions
+				      </label>
+				      <div class="invalid-feedback">
+				        You must agree before submitting.
+				      </div>
+				    </div>
+				  </div>
+				  <button class="btn btn-primary" type="submit">Submit form</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	</br>
+	</br>
+	</br>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">			
+				<div class="col-md-12" id="horizontalNav">
+					<ul class="nav"><!-- Horizontal Navigation List -->
+						<li class="col-md-3"><a href="https://www.facebook.com"><img src="images/facebook2.png" alt="facebook icon" class="icon"/></a></li>
+						<li class="col-md-3"><a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram icon" class="icon"/></a></li>
+						<li class="col-md-3"><a href="https://www.twittehttps://r.com"><img src="images/twitter2.png" alt="twitter icon" class="icon"/></a></li>
+						<li class="col-md-3"><a href="https://www.snapchat.com"><img src="images/snapchat2.png" alt="snapchat icon" class="icon"/></a></li>			
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</br>
+	</br>
+
+	<div id="foot">
+		<footer>
+			Gemini Space Travels &#127744; 4 Carl Sagan Way &#127744; Miramar, FL 33023 &#127744; (999) 999-9999  &#127744; &copy; 2019 All Rights Reserved
+		</footer>
+	</div>		
+	
+
+</body>
+</html>
